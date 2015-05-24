@@ -13,7 +13,7 @@ def draw_flower():
     window.bgcolor("white")
     brad = turtle.Turtle()
     brad.shape("classic")
-    brad.color("red")
+    brad.color("blue")
     brad.speed(0)
     for i in range(1,73):
         draw_rhombus(brad)
