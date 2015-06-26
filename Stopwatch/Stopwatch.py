@@ -44,11 +44,12 @@ def format(t):
 def reset_button_handler():
     """This function implements the event handler for reset button"""
     
-    global sw_time, success_stop, total_stop
+    global sw_time, success_stop, total_stop, watch_stopped
     timer.stop()
     sw_time = 0
     success_stop = 0
     total_stop = 0
+    watch_stopped = True
 
 def start_button_handler():
     """This function implements the event handler for start button"""
