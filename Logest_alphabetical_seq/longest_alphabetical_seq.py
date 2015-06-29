@@ -17,4 +17,4 @@ def longest_alphabetical_seq(s):
     
     return res
 
-print longest_alphabetical_seq(raw_input('Input String to find longest alphabetical sequence:'))
+print "Longest Alphabetical Sequence: "+longest_alphabetical_seq(raw_input('Input String to find longest alphabetical sequence:'))
