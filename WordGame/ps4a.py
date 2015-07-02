@@ -278,7 +278,7 @@ def playHand(hand, wordList, n):
         print "Run out of letters.",
     else:
         print "Goodbye!",     
-    print "Total score: " + str(totScore) + " points."
+    print "Total score: " + str(totScore) + " points.\n"
 
 #
 # Problem #5: Playing a game

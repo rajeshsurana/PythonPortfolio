@@ -104,7 +104,7 @@ def compPlayHand(hand, wordList, n):
             hand = updateHand(hand, word)
 
     # Game is over (user entered a '.' or ran out of letters), so tell user the total score
-    print "Total score: " + str(totScore) + " points."
+    print "Total score: " + str(totScore) + " points.\n"
     
 #
 # Problem #8: Playing a game
