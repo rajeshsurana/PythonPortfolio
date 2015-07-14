@@ -1,5 +1,5 @@
 # implementation of card game - Memory
-#http://www.codeskulptor.org/#user40_AwZZfbyN2G1YZw4.py
+# http://www.codeskulptor.org/#user40_9EvAhAeiFTEtxoA.py
 
 import simplegui
 import random
@@ -11,7 +11,7 @@ memoryDeck = lst1 + lst2
 
 # helper function to initialize globals
 def new_game():
-    global memoryDeck, exposed, state, unpaired1, unpaired2, turns
+    global memoryDeck, exposed, state, unpaired1, unpaired2, turns, cardColor
     random.shuffle(memoryDeck)
     exposed = [False for a in range(16)]
     state = 0
@@ -19,8 +19,26 @@ def new_game():
     unpaired2 = -1
     turns = 0
     label.set_text("Turns = " + str(turns))
-
-     
+    cardtype = []
+    index = 0
+    color = ""
+    cardColor = []
+    
+    # To make half of the deck red and half of it black
+    for card in memoryDeck:
+        if card in cardtype:
+            index = cardtype.index(card)
+            color = cardColor[index]
+            if(color == "Red"):
+                cardColor.append("Black")
+            elif(color == "Black"):
+                cardColor.append("Red")
+            cardtype.append(card)
+        else:
+            cardColor.append(random.choice(["Red", "Black"]))
+            cardtype.append(card)
+        
+        
 # define event handlers
 def mouseclick(pos):
     global memoryDeck, exposed, state, unpaired1, unpaired2, turns
@@ -57,26 +75,22 @@ def mouseclick(pos):
                            
 # cards are logically 50x100 pixels in size    
 def draw(canvas):
-    global memoryDeck, turns
+    global memoryDeck, turns, cardColor
     x = 0
     index = 0
-    cardtype = []
+    #cardtype = []
     for card in memoryDeck:
-        if card in cardtype:
-            cardColor = 'Red'
-        else:
-            cardColor = 'Black'
-            cardtype.append(card)
         if exposed[index]:
             canvas.draw_polygon([[x, 0], [x + 50, 0], [x + 50, 100], [x, 100]], 3, 'Silver', 'White')
-            canvas.draw_text(str(card), (x + 15, 62), 38, 'Black')
-            canvas.draw_text(str(card), (x + 6, 20), 15, 'Black', 'monospace')
-            canvas.draw_text(str(card), (x + 36, 90), 15, 'Black', 'monospace')
-            canvas.draw_polygon([[x + 38, 12], [x + 41, 15], [x + 38, 18], [x + 35, 15]], 3, cardColor, cardColor)
-            canvas.draw_polygon([[x + 12, 82], [x + 15, 85], [x + 12, 88], [x + 9, 85]], 3, cardColor, cardColor)
+            canvas.draw_text(str(card), (x + 15, 62), 38, cardColor[index])
+            canvas.draw_text(str(card), (x + 6, 20), 15, cardColor[index], 'monospace')
+            canvas.draw_text(str(card), (x + 36, 90), 15, cardColor[index], 'monospace')
+            canvas.draw_polygon([[x + 38, 12], [x + 41, 15], [x + 38, 18], [x + 35, 15]], 3, cardColor[index], cardColor[index])
+            canvas.draw_polygon([[x + 12, 82], [x + 15, 85], [x + 12, 88], [x + 9, 85]], 3, cardColor[index], cardColor[index])
         else:
-            #canvas.draw_polygon([[x, 0], [x + 50, 0], [x + 50, 100], [x, 100]], 1, 'White', 'Green')
             canvas.draw_polygon([[x, 0], [x + 50, 0], [x + 50, 100], [x, 100]], 3, 'Silver', 'White')
+            # If image is not loading then uncomment draw_polygon() and comment draw_image()
+            #canvas.draw_polygon([[x, 0], [x + 50, 0], [x + 50, 100], [x, 100]], 1, 'White', 'Green')
             canvas.draw_image(image, (600 / 2, 742 / 2), (600, 742), (x+25, 50), (50, 100))
             
         x += 50
@@ -96,6 +110,3 @@ frame.set_draw_handler(draw)
 image = simplegui.load_image('http://blog.spoongraphics.co.uk/wp-content/uploads/2013/playing-cards/13.jpg')
 new_game()
 frame.start()
-
-
-# Always remember to review the grading rubric
