@@ -1,4 +1,4 @@
-### Welecome to Awesome Python Programs!
+### Welecome to Awesome Python Programs by [Rajesh](http://www.rajeshsurana.com)!
 ## 1. Drawing Circle with squares
 Using turtle library
 
@@ -102,3 +102,57 @@ In this game you will find digital watch where you have to click stop button exa
 
 Screenshot of the game while playing->
 ![stopwatch.png](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/stopwatch.png)
+
+## 14. Word Game
+
+This game is a lot like Scrabble or Words With Friends, if you've played those. Letters are dealt to players, who then construct one or more words out of their letters. Each valid word receives a score, based on the length of the word and the letters in that word.
+
+[Here](https://github.com/rajeshsurana/PythonPortfolio/blob/master/WordGame/ps4b.py) is the code.
+
+Screenshot of the game while playing->
+![wordGame.png](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/wordGame.png)
+
+## 15. Edx Exam Programs
+* Write a Python function that returns a list of keys in aDict with the value target. 
+The list of keys you return should be sorted in increasing order. 
+The keys and values in aDict are both integers. 
+(If aDict does not contain the value target, you should return an empty list.)
+This function takes in a dictionary and an integer and returns a list.
+[Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/EdxCoursePrograms/keysWithValue.py)
+* Write a Python function that returns the sublist of strings in aList that contain fewer than 4 characters. For example, if aList = ["apple", "cat", "dog", "banana"], your function should return: ["cat", "dog"]
+This function takes in a list of strings and returns a list of strings. Your function should not modify aList.
+[Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/EdxCoursePrograms/lessThan4.py)
+* Write a simple procedure, myLog(x, b), that computes the logarithm of a number x relative to a base b. For example, if x = 16 and b = 2, then the result is 4 - because 2^4=16. If x = 15 and b = 3, then the result is 2 - because 3^2 is the largest power of 3 less than 15.
+In other words, myLog should return the largest power of b such that b to that power is still less than or equal to x.
+x and b are both positive integers; b is an integer greater than or equal to 2. Your function should return an integer answer.
+[Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/EdxCoursePrograms/myLog.py)
+*  Assumes L is a list of strings. Assume function f is already defined for you and it maps a string to a Boolean. Mutates L such that it contains all of the strings, s, originally in L such that f(s) returns True, and no other elements Returns the length of L after mutation.
+[Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/EdxCoursePrograms/satisfiesF.py)
+* Write a recursive Python function, given a non-negative integer N, to calculate and return the sum of its digits.
+Hint: Mod (%) by 10 gives you the rightmost digit (126 % 10 is 6), while doing integer division by 10 removes the rightmost digit (126 / 10 is 12).
+This function has to be recursive; you may not use loops!
+This function takes in one integer and returns one integer.
+[Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/EdxCoursePrograms/sumDigits.py)
+
+## 16. Memory Game
+Memory is a card game in which the player deals out a set of cards face down. In Memory, a turn (or a move) consists of the player flipping over two cards. If they match, the player leaves them face up. If they don't match, the player flips the cards back face down. The goal of Memory is to end up with all of the cards flipped face up in the minimum number of turns.  A Memory deck consists of eight pairs of matching cards.
+This program uses simplegui library. You can run this program at [http://www.codeskulptor.org/](http://www.codeskulptor.org/).
+
+Here is the [code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/MemoryGame/memory.py).
+
+Screenshot of the game at start->
+![memoryStart.png](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/memoryStart.png)
+
+In the middle while playing->
+![memoryMid.png](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/memoryMid.png)
+
+After finishing a game->
+![memoryEnd.png](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/memoryEnd.png)
+
+## 17. Encryption using Caesar Cipher
+In this problem, we will use a variant of the standard Caesar cipher where we will treat upper and lower case letters separately, so upper case letters will always be mapped to upper case letters, and lower case letters will always be mapped to lower case letters. Thus, if "a" maps to "c", "A" will map to "C". Characters such as the space character, commas, periods, exclamation points, etc will not be encrypted by this cipher - basically, all the characters within string.punctuation, plus the space (' ') and all numerical characters (0 - 9).
+
+Here is the [code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/Enryption/ps6_encryption.py). 
+
+Screenshot of the program in action->
+![cryptography.png](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/cryptography.png)
