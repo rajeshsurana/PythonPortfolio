@@ -149,10 +149,29 @@ In the middle while playing->
 After finishing a game->
 ![memoryEnd.png](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/memoryEnd.png)
 
-## 17. Encryption using Caesar Cipher
+## 17. Caesar Cipher - Cryptography
 In this problem, we will use a variant of the standard Caesar cipher where we will treat upper and lower case letters separately, so upper case letters will always be mapped to upper case letters, and lower case letters will always be mapped to lower case letters. Thus, if "a" maps to "c", "A" will map to "C". Characters such as the space character, commas, periods, exclamation points, etc will not be encrypted by this cipher - basically, all the characters within string.punctuation, plus the space (' ') and all numerical characters (0 - 9).
 
 Here is the [code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/Enryption/ps6_encryption.py). 
 
 Screenshot of the program in action->
 ![cryptography.png](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/cryptography.png)
+
+## 18. BlackJack Game
+Blackjack is a simple, popular card game that is played in many casinos. Cards in Blackjack have the following values: an ace may be valued as either 1 or 11 (player's choice), face cards (kings, queens and jacks) are valued at 10 and the value of the remaining cards corresponds to their number. During a round of Blackjack, the players plays against a dealer with the goal of building a hand (a collection of cards) whose cards have a total value that is higher than the value of the dealer's hand, but not over 21.  (A round of Blackjack is also sometimes referred to as a hand.)
+
+Here is the [code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/BlackJack/BlackJack.py).
+
+Screenshot of the program in action->
+![BlackJack](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/BlackJack.png)
+
+## 19. Asteroid Game
+This is the updated version of Asteroids game which is an arcade space shooter released in November 1979 by Atari, Inc. The player controls a spaceship in an asteroid field which is periodically traversed by flying saucers. The object of the game is to shoot and destroy asteroids and saucers while not colliding with either or being hit by the saucers' counter-fire. The game becomes harder as the number of asteroids increases. For this game we don't have flying saucers.
+
+Here is the [code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/Asteroids/asteroids.py).
+
+Screenshot of game's home screen->
+![Asteroid Home Screen](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/asteroidHome.png)
+
+Screeshot of the game in action->
+![Asteroid game in action](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/asteroidPlaying.png)
