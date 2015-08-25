@@ -1,3 +1,21 @@
+''' 
+Consider a binary tree.
+
+-zeroth cousin: If two nodes are siblings (have the same immediately preceding ancestor, such as nodes "H" and "I") they are zeroth cousins.
+-first cousin: Children of zeroth cousins are first cousins.
+-second cousin: Grandchildren of zeroth cousins are second cousins.
+-In general, i'th cousins have a grandparent or ancestor that is i levels up from their parents.
+
+Suppose two people, P1 and P2, are i'th cousins. Let C1 be a child of P1 and C2 be a child of P2. Then, C1 is an i'th cousin of P2, 1 removed, and C2 is an i'th cousin of P1, 1 removed.
+
+Let G1 now be a child of C1. G1 is an i'th cousin of P2, 2 removed.
+
+In general, the type of cousin (what 'i' is) is the shorter distance to the ancestor of two people, and the amount removed is the difference between the distance to the common ancestor.
+
+Class Member is a class that represents a single person in the family, and Class Family represents the whole family tree.
+
+You are to write code for the method cousin of the class Family according to the docstring in FamilyTree.py and the definitions for degree removed and cousin type.
+'''
 class Member(object):
     def __init__(self, founder):
         """ 
