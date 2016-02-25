@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+	</head>
+	<body>
+		<div id='restaurant'>
+		<h2>Create New Restaurant</h2>
+			<hr/>
+			<form method='POST' action="{{url_for('newRestaurant')}}">
+			<p>Name: <input type="text" name="name">&nbsp;<input type="submit" value="Create"></p>
+			</form>
+		</div>	
+	</body>
+</html>
