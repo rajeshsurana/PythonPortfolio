@@ -165,8 +165,8 @@ Here is the [code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/B
 Screenshot of the program in action->
 ![BlackJack](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/BlackJack.png)
 
-## 19. Asteroid Game
-This is the updated version of Asteroids game which is an arcade space shooter released in November 1979 by Atari, Inc. The player controls a spaceship in an asteroid field which is periodically traversed by flying saucers. The object of the game is to shoot and destroy asteroids and saucers while not colliding with either or being hit by the saucers' counter-fire. The game becomes harder as the number of asteroids increases. For this game we don't have flying saucers.
+## 19. Asteroids Game
+This is the updated version of Asteroids game which is an arcade space shooter released in November 1979 by Atari, Inc. The player controls a spaceship in an asteroid field which is periodically traversed by flying saucers. The object of the game is to shoot and destroy asteroids and saucers while not colliding with either or being hit by the saucers' counter-fire. The game becomes harder as the number of asteroids increases. For this game we don't have flying saucers. This program uses simplegui library to implement GUI.
 
 Here is the [code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/Asteroids/asteroids.py).
 
@@ -175,3 +175,67 @@ Screenshot of game's home screen->
 
 Screeshot of the game in action->
 ![Asteroid game in action](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/asteroidPlaying.png)
+
+## 20. RSS News Feed for Google and Yahoo
+Many websites have content that is updated on an unpredictable schedule. News sites, such as Google News, are a good example of this. One tedious way to keep track of this changing content is to load the website up in your browser, and periodically hit the refresh button. Fortunately, this process can be streamlined and automated by connecting to the website's RSS feed, using an RSS feed reader instead of a web browser (e.g. Sage). An RSS reader will periodically collect and draw your attention to updated content.
+
+[Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/RSSNewsFeed/ps7.py) can be found here.
+
+Screen shot of the newsfeed->
+![RSS News Feed](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/newsFeed.png)
+
+## 21. Unique Values from Dictionary
+You are given a dictionary aDict that maps integer keys to integer values. Write a Python function that returns a list of keys in aDict that map to dictionary values that appear exactly once in aDict.
+
+* This function takes in a dictionary and returns a list.
+* Return the list of keys in increasing order.
+* If aDict does not contain any values appearing exactly once, return an empty list.
+* If aDict is empty, return an empty list.
+
+Solution code can be found [here](https://github.com/rajeshsurana/PythonPortfolio/blob/master/UniqueValues/uniqueVal.py).
+
+## 22. Family Tree
+Consider a following tree->
+
+![Family Tree Graphics](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/familyTreeGraphics.png)
+
+* zeroth cousin: If two nodes are siblings (have the same immediately preceding ancestor, such as nodes "H" and "I") they are zeroth cousins.
+* first cousin: Children of zeroth cousins are first cousins.
+* second cousin: Grandchildren of zeroth cousins are second cousins.
+* In general, i'th cousins have a grandparent or ancestor that is i levels up from their parents.
+
+Suppose two people, P1 and P2, are i'th cousins. Let C1 be a child of P1 and C2 be a child of P2. Then, C1 is an i'th cousin of P2, 1 removed, and C2 is an i'th cousin of P1, 1 removed.
+Let G1 now be a child of C1. G1 is an i'th cousin of P2, 2 removed.
+In general, the type of cousin (what 'i' is) is the shorter distance to the ancestor of two people, and the amount removed is the difference between the distance to the common ancestor.
+
+Class Member is a class that represents a single person in the family, and Class Family represents the whole family tree.
+
+You are to write code for the method cousin of the class Family according to the docstring in FamilyTree.py and the definitions for degree removed and cousin type.
+
+Here is the [solution code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/FamilyTree/FamilyTree.py).
+
+Snapshot of the program output->
+![Family Tree](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/familyTree.png)
+
+## 23. Blog with MongoDB database
+I developed this blog step-by-step while completing MongoDB Course on MongoDB University. My part was to write statements to interact with MongoDB. Rest of the part was given as template. This is just a simple blog; nothing fancy! 
+
+You need MongoDB installed and server running to run this application. 'blog.py' is the main file. Restore the database+collection using json file provided in the directory.
+
+You can find the code [here](https://github.com/rajeshsurana/PythonPortfolio/tree/master/MyBlog_MongoDB).
+
+Here is the screenshot of the blog with dummy user Ashwin logged in to home page->
+
+![Blog](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/blog.png)
+
+## 24. Web Server in Flask - Restaurants and Menus
+I developed this web server application while completing Full Stack Foundations course on Udacity. On homepage I display restaurant list and CRUD functionality for each. You can also view menus for each restaurant by clicking on View Menu link. Menu page consists of description, price & course type of each menu. I have also added API endpoints to retrieve Restaurants and Menu data in JSON format.
+
+Here is the screenshot of the home page->
+![Restaurant home page](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/restauranthome.png)
+
+Here is Menu page for 'Thyme for That Vegetarian Cuisine' restaurant->
+![Restaurant Menus](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/restaurantmenu.png)
+
+JSON Endpoint reply for menus of a restaurant->
+![Menu in JSON forrmat](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/JSONmenu.png)
