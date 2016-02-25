@@ -5,14 +5,15 @@
 
 	
 	<body>
-	<div id = 'restaurant'>
+	
 		<div class = 'header'>
 		<h1>{{ restaurant.name }}</h1>
 		</div>
+		<div id = 'restaurant'>
 		<div style="font-size: 150%; text-align: center">
 			<a href = '{{url_for('newMenuItem', restaurant_id = restaurant.id) }}'>Create New Item</a>
 		</div>
-		
+		<hr/>
 
 <div class = 'flash'>
 		      {% with messages = get_flashed_messages() %}
