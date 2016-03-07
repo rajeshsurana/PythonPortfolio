@@ -231,6 +231,8 @@ Here is the screenshot of the blog with dummy user Ashwin logged in to home page
 ## 24. Web Server in Flask - Restaurants and Menus
 I developed this web server application while completing Full Stack Foundations course on Udacity. On homepage I display restaurant list and CRUD functionality for each. You can also view menus for each restaurant by clicking on View Menu link. Menu page consists of description, price & course type of each menu. I have also added API endpoints to retrieve Restaurants and Menu data in JSON format.
 
+You can find the code [here](https://github.com/rajeshsurana/PythonPortfolio/tree/master/WebServerFlask_Restaurant).
+
 Here is the screenshot of the home page->
 ![Restaurant home page](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/restauranthome.png)
 
@@ -239,3 +241,25 @@ Here is Menu page for 'Thyme for That Vegetarian Cuisine' restaurant->
 
 JSON Endpoint reply for menus of a restaurant->
 ![Menu in JSON forrmat](https://raw.githubusercontent.com/rajeshsurana/PythonPortfolio/master/Image/JSONmenu.png)
+
+## 25. Design Patterns with Python
+### 1. Creational Patterns
+1. Factory Method [[View Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/DesignPatternsWithPython/factory.py)]
+2. Abstract Factory [[View Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/DesignPatternsWithPython/abstractFactory.py)]
+3. Singleton [[View Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/DesignPatternsWithPython/singleton.py)]
+4. Builder [[View Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/DesignPatternsWithPython/builder.py)]
+5. Prototype [[View Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/DesignPatternsWithPython/prototype.py)]
+
+### 2. Structural Patterns
+6. Decorator [[View Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/DesignPatternsWithPython/decorator.py)]
+7. Proxy [[View Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/DesignPatternsWithPython/proxy.py)]
+8. Adapter [[View Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/DesignPatternsWithPython/adapter.py)]
+9. Composite [[View Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/DesignPatternsWithPython/composite.py)]
+10. Bridge [[View Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/DesignPatternsWithPython/bridge.py)]
+
+### 3. Behavioral Patterns
+11. Observer [[View Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/DesignPatternsWithPython/observer.py)]
+12. Visitor [[View Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/DesignPatternsWithPython/visitor.py)]
+13. Iterator [[View Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/DesignPatternsWithPython/iterator.py)]
+14. Strategy [[View Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/DesignPatternsWithPython/strategy.py)]
+15. Chain of Responsibility [[View Code](https://github.com/rajeshsurana/PythonPortfolio/blob/master/DesignPatternsWithPython/chain.py)]
